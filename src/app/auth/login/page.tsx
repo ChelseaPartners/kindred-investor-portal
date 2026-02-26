@@ -176,9 +176,9 @@ export default function LoginPage() {
         <div className="mb-8 text-center">
           <Link href="/" className="inline-flex items-center gap-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1a2332]">
-              <span className="text-base font-bold text-[#c9a96e]">K</span>
+              <span className="text-base font-bold text-[#c9a96e]">C</span>
             </div>
-            <span className="text-xl font-semibold text-[#1a2332]">Kindred Capital</span>
+            <span className="text-xl font-semibold text-[#1a2332]">Chelsea Partners</span>
           </Link>
         </div>
 

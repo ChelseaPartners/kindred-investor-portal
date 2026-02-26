@@ -29,10 +29,10 @@ export function AdminSidebar() {
     <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col border-r border-gray-200 bg-[#1a2332] lg:flex">
       <div className="flex h-16 items-center gap-2 px-6">
         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10">
-          <span className="text-sm font-bold text-[#c9a96e]">K</span>
+          <span className="text-sm font-bold text-[#c9a96e]">C</span>
         </div>
         <div>
-          <span className="text-lg font-semibold text-white">Kindred Capital</span>
+          <span className="text-lg font-semibold text-white">Chelsea Partners</span>
           <span className="ml-2 rounded bg-[#c9a96e]/20 px-1.5 py-0.5 text-xs font-medium text-[#c9a96e]">Admin</span>
         </div>
       </div>

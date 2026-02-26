@@ -74,7 +74,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email", value: "invest@kindredcapital.com" },
+                { icon: Mail, label: "Email", value: "invest@chelseapartners.com" },
                 { icon: Phone, label: "Phone", value: "(555) 123-4567" },
                 { icon: MapPin, label: "Office", value: "123 Investment Ave\nSuite 400\nCharleston, SC 29401" },
               ].map((item) => (

@@ -1,4 +1,4 @@
-export const APP_NAME = "Kindred Capital";
+export const APP_NAME = "Chelsea Partners";
 export const APP_DESCRIPTION = "Professional real estate investment management";
 
 export const ROUTES = {

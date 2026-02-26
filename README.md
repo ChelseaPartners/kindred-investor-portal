@@ -1,4 +1,4 @@
-# Kindred Capital — Investor Portal
+# Chelsea Partners — Investor Portal
 
 A professional real estate investment management platform built with Next.js 15, Supabase, and Tailwind CSS.
 

@@ -8,7 +8,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white">
-              About Kindred Capital
+              About Chelsea Partners
             </h1>
             <p className="mt-6 text-lg text-gray-300">
               Founded on the belief that real estate investment should be transparent,
@@ -25,7 +25,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-gray-900">Our Story</h2>
             <div className="mt-6 space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Kindred Capital was founded with a clear mission: to bring institutional-quality
+                Chelsea Partners was founded with a clear mission: to bring institutional-quality
                 real estate investment management to a select group of aligned partners. We believe
                 that great investments are built on trust, transparency, and rigorous analysis.
               </p>

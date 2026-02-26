@@ -20,9 +20,9 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1a2332]">
-            <span className="text-sm font-bold text-[#c9a96e]">K</span>
+            <span className="text-sm font-bold text-[#c9a96e]">C</span>
           </div>
-          <span className="text-lg font-semibold text-[#1a2332]">Kindred Capital</span>
+          <span className="text-lg font-semibold text-[#1a2332]">Chelsea Partners</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

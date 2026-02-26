@@ -60,7 +60,7 @@ export function AdminNav() {
           <div className="fixed inset-y-0 left-0 w-64 bg-[#1a2332] p-4">
             <div className="mb-6 flex items-center gap-2 px-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10">
-                <span className="text-sm font-bold text-[#c9a96e]">K</span>
+                <span className="text-sm font-bold text-[#c9a96e]">C</span>
               </div>
               <span className="text-lg font-semibold text-white">Admin</span>
             </div>

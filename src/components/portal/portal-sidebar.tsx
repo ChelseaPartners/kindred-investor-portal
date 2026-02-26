@@ -28,9 +28,9 @@ export function PortalSidebar() {
     <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col border-r border-gray-200 bg-[#1a2332] lg:flex">
       <div className="flex h-16 items-center gap-2 px-6">
         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10">
-          <span className="text-sm font-bold text-[#c9a96e]">K</span>
+          <span className="text-sm font-bold text-[#c9a96e]">C</span>
         </div>
-        <span className="text-lg font-semibold text-white">Kindred Capital</span>
+        <span className="text-lg font-semibold text-white">Chelsea Partners</span>
       </div>
 
       <nav className="flex-1 space-y-1 px-3 py-4">

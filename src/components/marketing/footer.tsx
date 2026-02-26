@@ -8,9 +8,9 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10">
-                <span className="text-sm font-bold text-[#c9a96e]">K</span>
+                <span className="text-sm font-bold text-[#c9a96e]">C</span>
               </div>
-              <span className="text-lg font-semibold text-white">Kindred Capital</span>
+              <span className="text-lg font-semibold text-white">Chelsea Partners</span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-gray-400">
               A trusted partner in real estate investment, delivering consistent returns
@@ -35,7 +35,7 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t border-gray-700 pt-8">
           <p className="text-center text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Kindred Capital. All rights reserved.
+            &copy; {new Date().getFullYear()} Chelsea Partners. All rights reserved.
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ export function Hero() {
             <span className="text-[#c9a96e]">Elevated</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Kindred Capital delivers institutional-quality real estate investments
+            Chelsea Partners delivers institutional-quality real estate investments
             with transparent reporting, consistent distributions, and hands-on
             asset management across high-growth markets.
           </p>

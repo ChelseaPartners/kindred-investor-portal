@@ -38,7 +38,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              Why Invest With Kindred
+              Why Invest With Chelsea
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               We combine deep market expertise with institutional-quality operations
