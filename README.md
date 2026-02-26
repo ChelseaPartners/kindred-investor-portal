@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kindred Capital — Investor Portal
+
+A professional real estate investment management platform built with Next.js 15, Supabase, and Tailwind CSS.
+
+## Architecture
+
+The app is organized into three interfaces using Next.js route groups:
+
+- **`(marketing)`** — Public-facing marketing site (landing, about, portfolio, contact)
+- **`(portal)`** — Authenticated investor portal (dashboard, properties, financials, documents, reports)
+- **`(admin)`** — Internal admin console (property management, investor management, file uploads, report publishing)
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router, TypeScript)
+- **Database & Auth**: Supabase (Postgres, Row Level Security, Auth)
+- **Styling**: Tailwind CSS
+- **Charts**: Recharts
+- **File Parsing**: xlsx (Excel), pdf-parse (PDF)
+- **Package Manager**: pnpm
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repo and install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Copy the environment template and fill in your Supabase credentials:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cp .env.local.example .env.local
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Run the Supabase migration against your project (via the Supabase dashboard SQL editor or CLI):
 
-## Learn More
+```
+supabase/migrations/00001_initial_schema.sql
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Start the dev server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+  app/
+    (marketing)/     # Public marketing pages
+    (portal)/        # Investor portal (auth required)
+    (admin)/         # Admin console (admin role required)
+    auth/            # Login & auth callback
+    api/             # API routes (upload, parse, PDF generation)
+  components/
+    ui/              # Reusable UI primitives (Button, Card, Input, etc.)
+    marketing/       # Marketing site components
+    portal/          # Investor portal components
+    admin/           # Admin console components
+    charts/          # Chart components (NOI, occupancy, revenue)
+  lib/
+    supabase/        # Supabase clients (browser, server, admin, middleware)
+    parsing/         # Financial file parsing (Excel, PDF, field mapping)
+    utils.ts         # Utility functions (cn, formatCurrency, etc.)
+    constants.ts     # App constants and route definitions
+    types.ts         # TypeScript type definitions
+supabase/
+  migrations/        # Database migration files
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Environment Variables
+
+| Variable | Description |
+|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | Your Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anonymous/public key |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role key (server-side only) |
+| `NEXT_PUBLIC_APP_URL` | App URL (default: `http://localhost:3000`) |
